@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><i class="fa-brands fa-google-wallet" style="color: #d71431;"></i><span id="span1">E</span>Lectronic <span>Shop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(238, 240, 244);">
+                  <li><a class="dropdown-item" href="#">Samrt Phone</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+                  <li><a class="dropdown-item" href="#">Cameras</a></li>
+                  <li><a class="dropdown-item" href="#">Fridge</a></li>
+                  <li><a class="dropdown-item" href="#">AC</a></li>
+                  <li><a class="dropdown-item" href="#">Samrt Watch</a></li>
+                  <li><a class="dropdown-item" href="#">Headphone</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">PC Moniter</a></li>
+                  <li><a class="dropdown-item" href="#">Hairdryer</a></li>
+                  <li><a class="dropdown-item" href="#">Iron</a></li>
+                  <li><a class="dropdown-item" href="#">Taaster</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+              <a href="login.html">
+              <button class="btn btn-outline-danger" >LOGIN</button></a>
+              <a href="register.html">
+              <button class="btn btn-outline-danger" >register</button></a>
+            
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Formulaire de Contact</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulaire de Contact -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-danger">send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+     <br><br>
+  <center>
+    <div class="col-md-6 py-3 py-md-0">
+      <div class="card">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://cache.marieclaire.fr/data/photo/w1200_h630_ci/5x/petit-electromenager-indispensables.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </h3>Best Headphone</h3>
+            <h5>Latest Collection</h5>
+               <p>Up To 40% Off</p>
+          
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://madtech.ca/wp-content/uploads/2023/07/quest-ce-quun-petit-electromenager-1024x579-1160x500.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <button id="shopnow">Shop Now</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.m-habitat.fr/medias/image/quel-petit-electromenager-choisir-dans-sa-cuisine-6909-643-0.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+               <p>you are welcome</p>
+              </div><center>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+      <h1 class="text-center">PRODUCTS</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/iphone 13 pro .webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Iphone 13 pro</h3>
+              <p class="text-center"> premium smartphone from Apple, featuring a 6.7-inch Super Retina XDR display, A15 Bionic chip, improved camera system with ProRAW and ProRes video recording, 5G connectivity, and enhanced battery life, all within a sleek, durable design.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$1000 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/a1.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Airpods</h3>
+              <p class="text-center">wireless Bluetooth earbuds made by Apple, designed for seamless integration with Apple devices, offering features like high-quality sound, active noise cancellation (in some models), and hands-free Siri access. If you meant something else, feel free to clarify!.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$100 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/laptop2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Laptop</h3>
+              <p class="text-center">a portable personal computer with a built-in screen, keyboard, and battery, designed for mobility and convenience, allowing users to work, browse, and perform tasks on the go.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$200 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/t1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Ipad</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$300 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/w1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center">A wearable device that tracks health data (like heart rate and steps), displays notifications, and often integrates with your phone for calls, messages, and apps.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$50.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/images.jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">PC Moniter</h3>
+              <p class="text-center">A screen used to display the output from a computer, available in various sizes and resolutions, designed to provide a clear, high-quality visual experience for work, gaming, or media consumption.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$600 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/iphonex.jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">iPhone x</h3>
+              <p class="text-center"> A smartphone from Apple featuring a 5.8-inch OLED display, Face ID, dual 12 MP rear cameras, A11 Bionic chip, and wireless charging..</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+     
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/h1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Headphone</h3>
+              <p class="text-center">Audio devices worn over or in the ears that allow you to listen to music, podcasts, or other audio, available in wired or wireless versions with different sound quality and noise-cancellation features.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    
+    
+       
+    <!-- other cards -->
+   
+<br><br><br><br>
+
+<div> <center> <h6  style="color: red;">
+  LIMITED TIME OFFER: 40% OFF - LET'S GO! <h1>🎉</h1><br>
+
+  Don't miss out on this amazing chance to save big! We're offering a 40% discount on all our products for a limited time only. <br>Whether you're upgrading your home, tech, or style, now is the perfect time to grab what you need at unbeatable prices.
+
+<br>🔹 Hurry, stock is limited! <br>🔹 Shop now and enjoy huge savings!</center></h6>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c7.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Hairdryer</h3>
+              <p class="text-center">an electric device used to dry and style hair by blowing warm or hot air over it, helping to speed up the drying process and add volume or smoothness.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$20.50 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/s2.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Iron</h3>
+              <p class="text-center">a household appliance used to press clothes, removing wrinkles and creases by applying heat and steam. It typically has a flat, heated metal surface and is used for smoothing fabric.
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$400 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="https://orzechheating.ca/wp-content/uploads/2024/04/A-mini-split-AC-unit-installed-on-a-wall.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">AC</h3>
+              <p class="text-center">a device used to cool and dehumidify indoor air, maintaining a comfortable temperature and improving air quality by removing heat and moisture from the air in a room or building.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/mg1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Microwave Oven</h3>
+              <p class="text-center">a kitchen appliance that uses microwave radiation to quickly heat or cook food by vibrating water molecules, offering fast cooking times and convenience.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$200.30 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fridge1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+              <p class="text-center">an appliance used to store food and drinks at low temperatures to preserve freshness and prevent spoilage.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$300 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c3.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Home Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c4.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Gaming Gadget</h3>
+              <p>Latest collection Up To 40% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c5.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Electronic Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr5.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fan</h3>
+              <p class="text-center">an electrical device that circulates air to cool down a space, providing ventilation and comfort by moving warm air out and creating airflow.
+
+
+
+              </p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$50.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fridge1.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+              <p class="text-center"> an appliance used to store food and drinks at low temperatures, helping to preserve freshness and prevent spoilage by slowing down the growth of bacteria.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$1500 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pc gemer.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming PC</h3>
+              <p class="text-center">high-performance computer designed specifically for playing video games, featuring powerful components like a fast CPU, high-end graphics card (GPU), ample RAM, and superior cooling systems for smooth gameplay.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>500.60 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr9.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center">wearable device that combines the functionality of a traditional watch with smart features like notifications, fitness tracking, heart rate monitoring, and app integration.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$30.20 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr10.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Power Bank</h3>
+              <p class="text-center"> portable external battery that stores electrical energy to charge devices like smartphones, tablets, and laptops on the go.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$100.50 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr11.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming Mouse</h3>
+              <p class="text-center">high-performance computer mouse designed for precision, speed, and customizable features to enhance gaming experiences, often with adjustable DPI, extra buttons, and ergonomic designs.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$30 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/toaster.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Toaster</h3>
+              <p class="text-center">electric appliance used to brown slices of bread or other baked goods by exposing them to heat.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$80 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/ac1.webp" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Air conditioning</h3>
+              <p class="text-center">AC units help reduce humidity levels by removing moisture from the air, which contributes to a more comfortable and less sticky environment.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>$95.20 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- offer -->
+    <div class="container" id="offer">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Free Shipping</h3>
+          <p>On order over $1000</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h3>Free Returns</h3>
+          <p>Within 30 days</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Fast Delivery</h3>
+          <p>World Wide</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h3>Big choice</h3>
+          <p>Of products</p>
+        </div>
+      </div>
+    </div>
+    <!-- offer -->
+
+
+
+
+
+    
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The Electronic Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+
+<!-- footer -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Electronic Shop</h3>
+          
+          <strong>Phone:</strong> +000000000000000 <br>
+          <strong>Email:</strong> electronicshop@.com <br>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 >Usefull Links</h4>
+         <ul>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms of service</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy policey</a></li>
+         </ul>
+        </div>
+
+
+
+       
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+
+         <ul>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> PS 5</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Computer</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Gaming Laptop</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Mobile Phone</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i> Gaming Gadget</a></li>
+         </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Social networks are online platforms that allow users to create profiles, connect with others, share content, and communicate. Some popular social networks include:</p>
+
+          <div class="socail-links mt-3">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+    </div>
+    
+  </div>
+</footer>
+<!-- footer -->
+
+
+
+
+   
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
